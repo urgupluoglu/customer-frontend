@@ -10,6 +10,9 @@ To avoid CORS issue, add the lines bellow to your nginx.conf file:
 
 
 location /back-end/ {
+
 	proxy_pass http://localhost:8080/;
+
 	proxy_redirect off;
+	
 }
